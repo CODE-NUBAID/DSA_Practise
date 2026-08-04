@@ -26,7 +26,6 @@ class Solution {
             current = current.next;
         }
         
-        // Attach the remaining elements from either list1 or list2
         if (list1 != null) {
             current.next = list1;
         } else {
