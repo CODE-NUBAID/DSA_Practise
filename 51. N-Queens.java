@@ -14,7 +14,6 @@ class Solution {
         return res;
     }
 
-    // Manually scan upward directions to check safety
     private boolean isSafe(int r, int c, int n, char[][] board) {
         // 1. Check straight up
         for (int i = 0; i < r; i++) {
@@ -49,7 +48,7 @@ class Solution {
 
     private void backtrack(int r, int n, char[][] board, List<List<String>> res) {
         if (r == n) {
-            // Convert the char array to the required List<String> format
+  
             List<String> currentBoard = new ArrayList<>();
             for (int i = 0; i < n; i++) {
                 currentBoard.add(new String(board[i]));
