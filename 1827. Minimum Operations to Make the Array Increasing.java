@@ -8,7 +8,7 @@ class Solution {
                 int expectedValue = nums[i - 1] + 1;
                 operations += expectedValue - nums[i];
 
-                // Update current element to minimum valid value
+ 
                 nums[i] = expectedValue;
             }
         }
